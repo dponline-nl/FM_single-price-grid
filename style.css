@@ -52,10 +52,15 @@ main {
     align-items: center;
     margin: 2em;
     border-radius: 6px;
+    max-width: 540px;
+}
+
+.center-hv {
+    display: flex;
+    justify-content: center;
 }
 
 .card {
-    max-width: 600px;
     width: 100%;
     padding: 2.5rem;
     line-height: 1.5;
@@ -127,7 +132,7 @@ main {
     opacity: 0.6;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 720px) {
     main {
         max-width: 640px;
         display: grid;
@@ -139,8 +144,6 @@ main {
     }
     .center-hv {
         height: 100vh;
-        display: flex;
-        justify-content: center;
         align-items: center;
     }
     .card:nth-child(1) {
